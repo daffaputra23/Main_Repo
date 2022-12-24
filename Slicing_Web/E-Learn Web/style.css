@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+
+
+body{
+    background:  #1A1A1A;;
+}
+*{
+    font-family: Source Sans Pro;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+nav i h1{
+    font-size: 24px;
+    font-weight: 700px;
+}
+
+.container{
+    width: 100vw;
+    padding: 0 72px;
+    box-sizing: border-box;
+}
+nav{
+    margin-top: 72px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    
+}
+
+.rev{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 68px;
+    margin-bottom: 16px;
+}
+
+.desc{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    opacity: 60%;
+    margin-bottom: 60px;
+    display: inline-block;
+}
+.button{
+    display: flex;
+}
+
+.btn-pick{
+    padding: 15px 30px;
+    background: #3757FF;
+    font-size: 18px;
+    border-radius: 100px;
+    margin-right: 35px;
+}
+
+.btn-truck{
+    gap: 15px;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+
+.body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
