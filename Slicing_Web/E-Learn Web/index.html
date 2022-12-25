@@ -8,10 +8,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="overlay"class="visible"  id="overlay">
+        <div class="close-btn">
+            <img src="close-btn.svg" alt="" srcset="" class="close-btn-img">
+        </div>
+        <div class="overlayLink">
+            <a href="">Home</a>
+            <a href="">Products</a>
+            <a href="">Career</a>
+            <a href="">Contact Us</a>
+        </div>
+    </div>
+   
+
     <div class="container">
         <nav>
             <h1><i>Swift Ship</i></h1>
-            <img src="Group 1.svg" alt="" srcset="">
+            <img src="Group 1.svg" alt="" srcset="" class="open-btn">
         </nav>
         <div class="body">
             <div class="text-contain">
@@ -32,5 +45,39 @@
             <img src="Group 5.svg" alt="">
         </div>
     </div>
+    <div class="buttom-text">
+        <div class="text1">
+            <p class="child"><strong>Fast Delivery</strong></p>
+            <p class="des">We understand that time is of the essence when it comes to shipping. That's why we offer fast delivery options for packages of all sizes, anywhere in the world.</p>
+        </div>
+        <div class="text2">
+            <p class="child"><strong>Reliable Service</strong></p>
+            <p class="des">We pride ourselves on our reliability. We have a team of professionals who are dedicated to ensuring that your packages are delivered on time.</p>
+        </div>
+        <div class="text3">
+            <p class="child"><strong>Secure Shipping</strong></p>
+            <p class="des">We use advanced tracking technology and secure handling techniques to ensure that your packages are delivered safely and securely.</p>
+        </div>
+    </div>
+
+    <script>
+        let closeBtn = document.querySelector(".close-btn-img");
+        let openBtn = document.querySelector(".open-btn");
+
+        let overlay = document.querySelector("#overlay")
+
+
+        closeBtn.addEventListener("click", function(){
+            overlay.classList.toggle("visible")
+        })
+
+        openBtn.addEventListener("click", function(){
+            overlay.classList.toggle("visible")
+            // console.log("helloo")
+        })
+    </script>
+
+
+   
 </body>
 </html>
