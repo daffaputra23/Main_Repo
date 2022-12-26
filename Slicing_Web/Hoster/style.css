@@ -61,3 +61,48 @@
     opacity: 60%;
     text-align: center;
 }
+
+.cardHead{
+    margin-bottom: 20px;
+}
+.basic{
+    margin-bottom: 8px;
+    font-weight: 300;
+    font-size: 18px;
+}
+.cardHead h1{
+    margin-bottom: 6px;
+
+}
+
+.listItem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.card-1 .addi{
+    font-weight: 500;
+    font-size: 14px;
+    opacity: 60%;
+}
+
+.card-1 .gb{
+    font-weight: 500;
+    font-size: 14px;
+    color: black;
+}
+
+.choose{
+    background-color: #00A3FF;
+    padding: 10px 50%;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+}
+
+.priceContainer{
+    display: flex;
+    justify-content: space-between ;
+}
