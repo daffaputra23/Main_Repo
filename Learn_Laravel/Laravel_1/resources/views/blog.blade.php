@@ -1,7 +1,7 @@
 @extends('layout.main')
 
 @section('blog')
-    @foreach ($dataBlog as $item)
+    @foreach ($dataModel as $item)
         <h1>{{ $item["title"] }}</h1>
         <h5>{{ $item["author"] }}</h5>
         <p>{{ $item["desc"] }}</p>

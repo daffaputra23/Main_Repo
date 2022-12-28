@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\PostController;
+use App\Models\Post;
 use Illuminate\Support\Facades\Route;
 use Symfony\Component\HttpKernel\EventListener\RouterListener;
 
@@ -18,50 +20,24 @@ Route::get('/', function () {
     return view('layout.main');
 });
 
-Route::get('/blog', function () {
-    $dataBlog =[
-        ["title" => "Daffa Putra Pratam",
-        "slug" => "postinganPertama",
-        "author" => "Dafa",
-        "desc" => "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod consequatur cumque iste maiores et, tempore mollitia error aperiam asperiores doloribus quidem dolorem, esse laborum recusandae velit dolore explicabo similique quo?"
-    ],
-        [
-        "title" => "Keisha",
-        "slug" => "postinganKedua",
-        "author" => "EL",
-        "desc" => "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod consequatur cumque iste maiores et, tempore mollitia error aperiam asperiores doloribus quidem dolorem, esse laborum recusandae velit dolore explicabo similique quo?"
-        ],
-    ];
-    return view('blog',[
-        "dataBlog" => $dataBlog,
-    ]);
-});
 
-Route::get('viewPost/{slug}', function ($slug){
-    $dataBlog =[
-        ["title" => "Daffa Putra Pratam",
-        "slug" => "postinganPertama",
-        "author" => "Dafa",
-        "desc" => "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod consequatur cumque iste maiores et, tempore mollitia error aperiam asperiores doloribus quidem dolorem, esse laborum recusandae velit dolore explicabo similique quo?"
-    ],
-        [
-        "title" => "Keisha",
-        "slug" => "postinganKedua",
-        "author" => "EL",
-        "desc" => "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod consequatur cumque iste maiores et, tempore mollitia error aperiam asperiores doloribus quidem dolorem, esse laborum recusandae velit dolore explicabo similique quo?"
-        ],
-    ];
+// Route::get('/blog', function () {
 
-    $detail = [];
-    foreach($dataBlog as $data){
-        if($data["slug"] === $slug){
-            $detail = $data;
-            // ini berarti ngerubah di $detail dengan 1 data yang uda diseleksi
-            // if
-        } 
-    }
+//     return view('blog', [
+//         "dataModel" => Post::all(),
+//     ]);
+// });
 
-    return view('viewPost', [
-        "data" => $detail
-    ]);
-});
+// Route::get('viewPost/{slug}', function ($slug){
+   
+
+//     return view('viewPost', [
+//         "data" => Post::find($slug),
+//     ]);
+
+
+//     Route::controller('viewPost/{slug}', 'UserController');
+// });
+
+Route::get('/blog',[PostController::class, 'index']);
+Route::get('/viewPost{slug}', [PostController::class, 'find']);
