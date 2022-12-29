@@ -17,7 +17,7 @@ class PostController extends Controller
     public function index()
     {
         return view('dataModel', [
-            "dataBlog" => Post::all()
+            "dataBlog" => Post::all(),
         ]);
     }
 

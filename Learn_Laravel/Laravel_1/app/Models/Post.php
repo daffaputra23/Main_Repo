@@ -6,7 +6,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Post 
+class Post
 {
     
 
@@ -28,9 +28,15 @@ class Post
 
     public static function all(){
 
-        return collect(self::$dataBlog);
+        return collect(static::$dataBlog);
+        // $data = static::$dataBlog;
+
+        // return $data;
 
     }
+
+    // kalau :: di isiin di controller dan diisi langsung ke variabel gabisa 
+    // cuman pake variabel. Ini hanya berfungsi de fungsi model.
 
     public static function find($slug){
 
