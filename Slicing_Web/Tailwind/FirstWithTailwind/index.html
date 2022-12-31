@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YTTA</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -10,11 +11,15 @@
 
         fontFamily : {
           'sans' : ['Source Sans Pro']
-
         },
+
         extend: {
           colors: {
             clifford: '#da373d',
+            primary : '#FC881D',
+          },
+          dropShadow : {
+            'button' : '0px 30px 60px rgba(252, 136, 29, 0.25)',
           }
         }
       }
@@ -27,32 +32,46 @@
 <body>
  <div class="w-auto h-[1288px] bg-no-repeat bg-cover" style="background-image: url(bf.svg);" >
   <div class="container text-white box-border px-14">
-      <div class="navBar flex items-center justify-between pt-14">
-        <div class="Logo flex gap-4 items-center">
-          <img src="Logo.svg" alt="" srcset="">
-          <p class="font-sans text-lg">YTTA</p>
-        </div>
-        <div class="menu">
-          <ul class="flex text-base gap-12">
-            <li>
-              <a href="">Top</a>
-            </li>
-            <li>
-              <a href="">Features</a>
-            </li>
-            <li>
-              <a href="">Reasons</a>
-            </li>
-            <li>
-              <a href="">Alternatives</a>
-            </li>
-          </ul>
-        </div>
-        <div class="button flex gap-2">
-          <button class="px-6 py-2">Mendaftar</button>
-          <button class="px-6 py-2 bg-white text-black rounded-[100px] font-bold">Login</button>
-        </div>
-      </div>
+      <div class="navBar flex items-center justify-between pt-14 mb-32">
+          <div class="Logo flex gap-4 items-center">
+            <img src="Logo.svg" alt="" srcset="">
+            <p class="font-sans text-lg">YTTA</p>
+          </div>
+          <div class="menu">
+            <ul class="flex text-base gap-12">
+              <li>
+                <a href="">Top</a>
+              </li>
+              <li>
+                <a href="">Features</a>
+              </li>
+              <li>
+                <a href="">Reasons</a>
+              </li>
+              <li>
+                <a href="">Alternatives</a>
+              </li>
+            </ul>
+          </div>
+          <div class="button flex gap-2">
+            <button class="px-6 py-2">Mendaftar</button>
+            <button class="px-6 py-2 bg-white text-black rounded-[100px] font-bold">Login</button>
+          </div>
+       </div>
+       <div class="hero">
+         <div class="text">
+          <p class="text-primary text-center tracking-widest mb-5">MANA SAYA TAU SAYA KAN PENCURRY</p>
+          <h1 class="text-center text-6xl mb-8">Social Media Tool Yang Tidak<br>Akan Memberikan Kamu<br>Insight Apapun</h1>
+          <p class="text-center font-normal leading-8 mb-8 text-lg">Adalah benar apa yang kamu baca barusan. Tool yang mainstream akan<br>memberikan kamu berbagai insight, karena kami anti-mainstream maka<br>kami akan melakukan sebaliknya.</p>
+         </div>
+         <div class="button flex items-center gap-4 text-base font-semibold justify-center">
+          <button class="px-10 py-6 color-white bg-primary rounded-full drop-shadow-button">Memulai Sekarang</button>
+          <button class=" flex items-center px-10 py-6 gap-4">
+            <img src="play.svg" alt="">
+            Pelajarin Dulu
+          </button>
+         </div>
+       </div>
  </div>
   </div>
 </body>
