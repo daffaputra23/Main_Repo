@@ -18,10 +18,14 @@
             clifford: '#da373d',
             primary : '#FC881D',
             secondary : '#FFF6ED',
-            dark : '#0D0E25'
+            dark : '#0D0E25',
+            bgBlur : '#FFE9D6',
+            line : 'rgba(13, 14, 37, 0.05);'
           },
           dropShadow : {
             'button' : '0px 30px 60px rgba(252, 136, 29, 0.25)',
+            'buttonP' : '0px 30px 60px rgba(13, 14, 37, 0.2)'
+            
           }
         }
       }
@@ -76,7 +80,8 @@
           </div>
         </div>
         <img src="Group.svg" alt="" class="mx-auto">
-    <div class="hero_2 flex items-center gap-32 justify-between">
+
+    <div class="hero_2 flex items-center gap-32 justify-between mb-28">
       <div class="hero-text">
         <div class="kenapa flex items-center gap-2 text-primary text-base font-semibold mb-2">
             <div class="line w-[45px] h-[2px] bg-primary"></div>
@@ -86,57 +91,85 @@
             <h1 class="text-4xl font-bold text-dark mb-5">Kenapa Kami Tidak<br>Memberikan Insight Apapun?</h1>
             <p  class="text-dark opacity-60 text-base">Di sini kita akan klarifikasi mengapa kita tidak memberikan insight<br>apapun di tool ini kepada kamu. Pada dasarnya hal ini kami lakukan<br>semata-mata ingin menyelamatkan planet bumi.</p>
           </div>
-          <button class="px-8 py-5 bg-dark flex item-center gap-2 rounded-full">
+          <button class="px-8 py-5 bg-dark flex item-center gap-2 rounded-full drop-shadow-buttonP">
             <img src="arrow-right-circle.svg" alt="">
             Pelajari Lebih Lanjut 
           </button>
         </div>
 
-        <div class="kotak grid grid-cols-2 grid-rows-2 w-[575px]">
+      <div class="kotak grid grid-cols-2 grid-rows-2 w-[575px] gap-[1px]">
           
-          <div class="databse p-9 bg-dark">
-             <div class="databaseTextTitle">
+        <div class="databse p-9 bg-dark rounded drop-shadow-buttonP">
+            <div class="databaseTextTitle flex items-center text gap-2 mb-3">
              <img src="database.svg" alt="" class="p-2 bg-white bg-opacity-10 rounded ">
+             <p class="text-white text-lg">Database</p>
             </div>
             <div class="textDesc">
               <p>Data insight yang banyak kan bakal disimpen di database, ya kalo datanya banyak kan jadi gede juga size database-nya.</p>
             </div>
           </div>
 
-          <div class="databse p-3 bg-dark">
-             <div class="databaseTextTitle">
-             <img src="database.svg" alt="" class="p-2 bg-white bg-opacity-10 rounded ">
-            </div>
+          <div class="databse p-9 text-dark border-l-[0.5px] border-line">
+             <div class="databaseTextTitle flex items-center gap-2 font-semibold mb-3">
+              <img src="server.svg" alt="" class="p-2 bg-bgBlur rounded ">
+              <p class="text-lg">Server</p>
+             </div>
             <div class="textDesc">
-              <p>Data insight yang banyak kan bakal disimpen di database, ya kalo datanya banyak kan jadi gede juga size database-nya.</p>
+              <p class="opacity-60">Data insight yang banyak kan bakal disimpen di database, ya kalo datanya banyak kan jadi gede juga size database-nya.</p>
             </div>
           </div>
-          
-          <div class="databse p-3 bg-dark">
-            <div class="databaseTextTitle">
-            <img src="database.svg" alt="" class="p-2 bg-white bg-opacity-10 rounded ">
-           </div>
+
+          <div class="databse p-9 text-dark rounded border-t-[0.5px] border-line">
+            <div class="databaseTextTitle flex items-center gap-2 font-semibold mb-3">
+             <img src="zap.svg" alt="" class="p-2 bg-bgBlur rounded ">
+             <p class="text-lg">Listrik</p>
+            </div>
            <div class="textDesc">
-             <p>Data insight yang banyak kan bakal disimpen di database, ya kalo datanya banyak kan jadi gede juga size database-nya.</p>
+             <p class="opacity-60">Data insight yang banyak kan bakal disimpen di database, ya kalo datanya banyak kan jadi gede juga size database-nya.</p>
            </div>
          </div>
 
-         <div class="databse p-3 bg-dark">
-          <div class="databaseTextTitle">
-          <img src="database.svg" alt="" class="p-2 bg-white bg-opacity-10 rounded ">
-         </div>
+         <div class="databse p-9 text-dark border-l-[0.5px] border-t-[0.5px] border-line">
+          <div class="databaseTextTitle flex items-center gap-2 font-semibold mb-3">
+           <img src="globe.svg" alt="" class="p-2 bg-bgBlur rounded ">
+           <p class="text-lg">Lingkungan</p>
+          </div>
          <div class="textDesc">
-           <p>Data insight yang banyak kan bakal disimpen di database, ya kalo datanya banyak kan jadi gede juga size database-nya.</p>
+           <p class="opacity-60">Data insight yang banyak kan bakal disimpen di database, ya kalo datanya banyak kan jadi gede juga size database-nya.</p>
          </div>
-       </div>
-          
-          <div class="server"></div>
-          <div class="listrik"></div>
-          <div class="lingkungan"></div>
+        </div>
         </div>
       </div>
     <div>
       <!-- div hero 2 -->
+
+    <div class="hero_3">
+      <div class="hero3_text flex flex-col items-center mb-14">
+        <p class="text-primary mb-2">TERUS NGAPAIN DONG?</p>
+        <h1 class="text-3xl font-bold text-dark text-center mb-5">Terus Ngapain Dong Kalo Nggak Ada<br>Insight Apapun?</h1>
+        <p class="font-normal text-center text-dark opacity-60">Ya nggak tau, salah sendiri lu ngapain ke website ini. Tapi ada tiga kemungkinan<br>kenapa lo bisa ada di website ini. Ketiga kemungkinans itu akan gwej jabarkan<br>di bawah ini dengan ilustrasinya hehehe.</p>
+      </div>
+
+      <div class="card-3 text-dark flex gap-8">
+
+        <div class="childCard1 flex flex-col gap-2">
+          <img src="loveCard.svg" alt="">
+          <h5 class="font-semibold text-2xl">Kamu Tidak Punya Kekasih</h5>
+          <p class="opacity-60">Sudah pasti orang yang tidak punya kekasih akan memiliki waktu luang yang banyak, jadi ya lo iseng aja gitu datang ke website ini.</p>
+        </div>
+        <div class="childCard1 flex flex-col gap-2">
+          <img src="smileCard.svg" alt="">
+          <h5 class="font-semibold text-2xl">Kamu Tidak Punya Kekasih</h5>
+          <p class="opacity-60">Sudah pasti orang yang tidak punya kekasih akan memiliki waktu luang yang banyak, jadi ya lo iseng aja gitu datang ke website ini.</p>
+        </div>
+        <div class="childCard1 flex flex-col gap-2">
+          <img src="ayamCard.svg" alt="">
+          <h5 class="font-semibold text-2xl">Kamu Tidak Punya Kekasih</h5>
+          <p class="opacity-60">Sudah pasti orang yang tidak punya kekasih akan memiliki waktu luang yang banyak, jadi ya lo iseng aja gitu datang ke website ini.</p>
+        </div>
+        
+      </div>
+    </div>
 </div>
 </div>
 </body>
