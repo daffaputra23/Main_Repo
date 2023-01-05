@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+            backgroundImage : {
+                linear : "linear-gradient(90deg, #0500FF 0.52%, #F8FB76 35.41%, #4EFF75 63.63%, #00FFD1 99.03%)",
+                primary : "background: rgba(247, 250, 255, 0.9), backdrop-filter: blur(110px);"
+
+            },
+          colors: {
+            primary : '#001AFF'
+          },
+          fontFamily : {
+            poppins : "Poppins"
+          },
+          
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="background w-full h-[1000px] bg-cover" style="background-image: url(back.svg);">
+    <!-- <div class="blur w-full h-[1000px] " style="background: rgba(247, 250, 255, 0.9); backdrop-filter: blur(110px);"> </div> -->
+    <div class="container w-full px-20">
+        <div class="nav flex items-center justify-between pt-14 mb-32">
+            <p class="font-semibold text-2xl">Jobless</p>
+            <div class="item text-base font-normal">
+                <ul class="flex items-center gap-12">
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Discover</a>
+                    </li>
+                    <li>
+                        <a href="">Post a Job</a>
+                    </li>
+                    <li>
+                        <a href="">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="signUp font-medium px-6 py-2 outline rounded">
+                Sign Up
+            </button>
+        </div>
+        <div class="heroText">
+            <h1 class="font-semibold text-4xl text-center mb-4">Get Connected to the Best Remote<br>Jobs in Your Field</h1>
+            <p class="font-normal text-base text-center opacity-60 leading-8 mb-10">Discover a wide range of remote opportunities on our platform<br>and take control of your career</p>
+            <div class="button text-base font-semibold flex items-center  justify-center gap-5">
+                <button class="px-5 py-4 text-white rounded-full bg-primary">Explore Remote Jobs</button>
+                <a href="" class="text-primary decoration-primary decoration-solid underline">How It Works?</a>
+            </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
