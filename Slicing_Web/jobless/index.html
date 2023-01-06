@@ -22,6 +22,9 @@
           fontFamily : {
             poppins : "Poppins"
           },
+          dropShadow: {
+            primary : " 0px 30px 60px rgba(0, 26, 255, 0.1)"
+          },
           
         }
       }
@@ -29,9 +32,9 @@
   </script>
 </head>
 <body>
-  <div class="background w-full h-[1000px] bg-cover" style="background-image: url(back.svg);">
+  <div class="background w-full h-[1000px] bg-cover font-poppins" style="background-image: url(back.svg);">
     <!-- <div class="blur w-full h-[1000px] " style="background: rgba(247, 250, 255, 0.9); backdrop-filter: blur(110px);"> </div> -->
-    <div class="container w-full px-20">
+    <div class="container w-full px-[150px]">
         <div class="nav flex items-center justify-between pt-14 mb-32">
             <p class="font-semibold text-2xl">Jobless</p>
             <div class="item text-base font-normal">
@@ -54,13 +57,66 @@
                 Sign Up
             </button>
         </div>
-        <div class="heroText">
+        <div class="heroText mb-28">
             <h1 class="font-semibold text-4xl text-center mb-4">Get Connected to the Best Remote<br>Jobs in Your Field</h1>
             <p class="font-normal text-base text-center opacity-60 leading-8 mb-10">Discover a wide range of remote opportunities on our platform<br>and take control of your career</p>
             <div class="button text-base font-semibold flex items-center  justify-center gap-5">
-                <button class="px-5 py-4 text-white rounded-full bg-primary">Explore Remote Jobs</button>
-                <a href="" class="text-primary decoration-primary decoration-solid underline">How It Works?</a>
+                <button class="px-5 py-4 text-white rounded-full bg-primary" style="box-shadow: 0px 15px 30px rgba(0, 26, 255, 0.2);" >Explore Remote Jobs</button>
+                <a href="" class="text-primary decoration-primary decoration-solid underline px-4 py-3">How It Works?</a>
             </div>
+        </div>
+        <div class="card w-full grid grid-cols-3 gap-8">
+
+            <div class="card bg-primary text-white p-8  flex flex-col gap-5 rounded rounded-lg drop-shadow-primary">
+              <div class="logo flex gap-3">
+                <img src="figma.svg" alt="">
+                <div class="text">
+                  <p class="text-lg font-semibold">Front-End Developer</p>
+                  <p class="opacity-80 text-sm font-normal">Figma</p>
+                </div>
+              </div>
+              <p  class="opacity-80 font-normal text-base leading-8">We are looking for an experienced front-end developer to join our team.</p>
+              <div class="w-full h-[1px] bg-white opacity-20"></div>
+              <div class="rust flex items-center justify-between">
+                <p class="px-4 py-2 rounded-full font-bold text-xs" style="background: rgba(255, 255, 255, 0.15);">Rust</p>
+                <p class="price font-semibold text-base">$70,000 - $90,000</p>
+              </div>
+            </div>
+
+            <div class="card bg-white text-white p-8  flex flex-col gap-5 rounded-lg drop-shadow-primary">
+              <div class="logo flex gap-3">
+                <img src="facebook.svg" alt="">
+                <div class="text">
+                  <p class="text-lg font-semibold text-slate-800">Datascientist</p>
+                  <p class="opacity-80 text-sm font-normal text-slate-500">Facebook</p>
+                </div>
+              </div>
+              <p  class=" text-slate-500 leading-8 font-normal text-base">We are seeking a data scientist to join our team.</p>
+              <div class="w-full h-[1px] bg-slate-900 opacity-20"></div>
+              <div class="rust flex items-center justify-between">
+                <p class="px-4 py-2 rounded-full bg-slate-200 text-slate-800 font-bold text-xs">Phyton</p>
+                <p class="price font-semibold text-base text-slate-900">$70,000 - $90,000</p>
+              </div>
+            </div>
+
+            <div class="card bg-white text-white p-8  flex flex-col gap-5 rounded-lg drop-shadow-primary">
+              <div class="logo flex gap-3">
+                <img src="vercel.svg" alt="">
+                <div class="text">
+                  <p class="text-lg font-semibold text-slate-800">Technical Writer</p>
+                  <p class="opacity-80 text-sm font-normal text-slate-500">Vercel</p>
+                </div>
+              </div>
+              <p  class=" text-slate-500 leading-8 font-normal text-base">We are seeking a technical writer to join our team.</p>
+              <div class="w-full h-[1px] bg-slate-900 opacity-20"></div>
+              <div class="rust flex items-center justify-between">
+                <p class="px-4 py-2 rounded-full bg-slate-200 text-slate-800 font-bold text-xs">Documentation</p>
+                <p class="price font-semibold text-base text-slate-900">$70,000 - $90,000</p>
+              </div>
+            </div>
+
+
+          
         </div>
     </div>
   </div>
