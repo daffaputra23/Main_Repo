@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style> @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap'); </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily : {
+            dm : 'DM Sans',
+            sans : 'Source Sans Pro'
+        },
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="bgContainer w-full bg-top bg-contain h-[1500px] bg-no-repeat text-dm" style="background-image: url(mainBg.svg);">
+      <div class="section-1 w-full px-32 box-border">
+
+        <!-- navbar item -->
+        <div class="navbar flex items-center justify-between text-white pt-[62px] mb-6">
+            <div class="logo flex items-center gap-4 ">
+                <img src="logo.svg" alt="">
+                <p class="font-bold text-lg">The Malaka</p>
+            </div>
+            <div class="item font-normal text-base">
+                <ul class="flex items-center gap-12 opacity-80">
+                    <li>
+                        <a href="">Top</a>
+                    </li>
+                    <li>
+                        <a href="">For Everyone</a>
+                    </li>
+                    <li>
+                        <a href="">Benefit</a>
+                    </li>
+                    <li>
+                        <a href="">Preview</a>
+                    </li>
+                    <li>
+                        <a href="">Penulis</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="py-[15px] px-[30px] bg-white font-bold text-lg text-slate-800 rounded-full">Download</button>
+        </div>
+        <!-- navbar item -->
+
+        <!-- hero section 1 -->
+        <div class="flex items-center ">
+            <div class="textContainer pr-[250px] pb-14">
+
+                <div class="text text-white flex flex-col gap-5">
+                    <h1 class=" mb-5 header text-5xl font-medium leading-[62px]">Sebuah framework CSS untuk developer yang memiliki phobia terhadap CSS</h1>
+                    <p class="desc mb-12 text-base font-normal leading-[32px] opacity-80">Buku ini akan mengajarkan kamu konsep utility-first pada CSS dan diakhiri dengan membangun sebuah website yang responsive dengan Tailwind CSS.</p>
+                </div>
+                <div class="button flex items-center gap-10 mb-24">
+                    <button class="flex font-bold text-base text-white items-center px-12 py-6 rounded-full" style="background: #00BAC7;
+                    box-shadow: 0px 15px 30px rgba(0, 186, 199, 0.33);">
+                        Beli Sekarang 
+                    </button>
+                    <div class="flex gap-7 items-start">
+                        <img src="download.svg" alt="">
+                        <div class="text-white flex-col gap-2">
+                            <p class="font-sans font-semibold text-base opacity-80">Sudah Terjual</p>
+                            <p class="font-semibold text-2xl">501,234+</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="opacity-40 gap-2 text-white flex items-center mb-4">
+                        <div class="box w-[30px] h-[2px] bg-white"></div>
+                        <p class="text-sm font-bold">TEKNOLOGI YANG DIGUNAKAN</p>
+                    </div>
+                    <div class="logo">
+                        <img src="logoBrand.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        
+                <img src="noshadow.svg" alt="" class="w-[522px]" style="filter: drop-shadow(0px 80px 100px rgba(29, 43, 63, 0.4));
+                transform: rotate(8.18deg);">
+          
+        </div>
+
+
+        <!-- hero section 1 -->
+
+
+
+
+
+
+      </div>
+  </div>
+</body>
+</html>
