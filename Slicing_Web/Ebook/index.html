@@ -15,6 +15,8 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            primary : "#00BAC7",
+            dark : '#272D3E'
           }
         }
       }
@@ -55,8 +57,8 @@
         <!-- navbar item -->
 
         <!-- hero section 1 -->
-        <div class="flex items-center ">
-            <div class="textContainer pr-[250px] pb-14">
+        <div class="flex items-center mb-[200px]">
+            <div class="textContainer pr-[250px] pb-14  box-border">
 
                 <div class="text text-white flex flex-col gap-5">
                     <h1 class=" mb-5 header text-5xl font-medium leading-[62px]">Sebuah framework CSS untuk developer yang memiliki phobia terhadap CSS</h1>
@@ -85,20 +87,28 @@
                     </div>
                 </div>
             </div>
-        
-                <img src="noshadow.svg" alt="" class="w-[522px]" style="filter: drop-shadow(0px 80px 100px rgba(29, 43, 63, 0.4));
-                transform: rotate(8.18deg);">
-          
+            <img src="noshadow.svg" alt="" class="w-[522px]" style="filter: drop-shadow(0px 80px 100px rgba(29, 43, 63, 0.4));
+            transform: rotate(8.18deg);">  
         </div>
-
-
         <!-- hero section 1 -->
 
 
-
-
-
-
+        <!-- section 2 -->
+        <div class="containerSec2 grid grid-cols-2 items-start justify-between w-full flex-row">
+            <div class="containText2 flex flex-col items-start w-full pr-40">
+                <div class="textLeft">
+                    <div class="strip flex items-center gap-2">
+                        <div class="w-[30px] h-[2px] bg-primary"></div>
+                        <p class="font-bold text-sm text-primary">BUKU INI UNTUK SIAPA</p>
+                    </div>
+                    <p class="font-dm font-medium text-3xl text-dark leading-10">Buku yang cocok dibaca untuk front-end dan back-end, bahkan UI designer!</p>
+                </div>
+            </div>
+            <div class="textRight">
+                <p class="text-lg leading-9 font-normal opacity-80">Buku ini bukan hanya untuk front-end developer yang ingin meningkatkan skill, buku ini juga cocok untuk back-end developer dan UI designer agar dapat menulis style tanpa harus menulis kode CSS dan tanpa mengandalkan front-end developer!</p>
+            </div>
+        </div>
+        <!-- section 2 -->
       </div>
   </div>
 </body>
