@@ -16,7 +16,8 @@
           colors: {
             clifford: '#da373d',
             primary : "#00BAC7",
-            dark : '#272D3E'
+            dark : '#272D3E',
+            abu : '#C4C4C4'
           }
         }
       }
@@ -24,7 +25,7 @@
   </script>
 </head>
 <body>
-  <div class="bgContainer w-full bg-top bg-contain h-[1500px] bg-no-repeat text-dm" style="background-image: url(mainBg.svg);">
+<div class="bgContainer w-full bg-top bg-contain h-[1500px] bg-no-repeat text-dm" style="background-image: url(mainBg.svg);">
     <div class="section-1 w-full px-32 box-border">
 
         <!-- navbar item -->
@@ -98,7 +99,7 @@
             <div class="containerSec2 grid grid-cols-2 items-start justify-between w-full flex-row">
                 <div class="containText2 flex flex-col items-start w-full pr-40">
                     <div class="textLeft">
-                        <div class="strip flex items-center gap-2">
+                        <div class="strip flex items-center gap-2 mb-2">
                             <div class="w-[30px] h-[2px] bg-primary"></div>
                             <p class="font-bold text-sm text-primary">BUKU INI UNTUK SIAPA</p>
                         </div>
@@ -134,15 +135,29 @@
             </div>
         </div>
     </div>
-        
+    <div class="containChild bg-primary text-white w-full px-[130px] py-[100px] grid grid-cols-2 gap-[140px]">
+        <div class="textLeft w-full box-border mr-[134px] flex flex-col w-full pr-8">
+            <div class="child mb-20">
+                <div class="strip flex items-center gap-2 mb-2">
+                    <div class="w-[30px] h-[2px] bg-white"></div>
+                    <p class="font-bold text-sm text-white">BUKU INI UNTUK SIAPA</p>
+                </div>
+                <p class="font-medium text-4xl leading-10">Kata Pengantar Dari Penulis Buku</p>
+            </div>
+            <div class="strip w-full bg-abu" style="height: 0,8;"></div>
+            <div class="profile flex items-center gap-5">
+                <img src="profile2.svg" alt="">
+                <div class="profileNae">
+                    <p class="font-medium text-lg mb-2">Muhamad Nauval Azhar</p>
+                    <p class="font-normal text-sm opacity-80">@mhdnauvalazhar</p>
+                </div>
+            </div>
+        </div>
+        <div class="textRight font-normal text-lg leading-10 text-white">
+            <p>"Tailwind sangat memungkinkan kamu untuk membangun sebuah desain website yang unik dan tanpa kamu perlu menulis kode CSS sedikitpun. Mungkin kamu akan berpikir bahwa kamu akan membutuhkan waktu yang lebih lama ketika membangun sebuah website dengan utility-first framework ketimbang dengan framework UIkit. Ya, benar. Karena kamu harus memikirkan desain dan mengimplementasikan desain tersebut dari awal sendiri. Namun, kamu perlu ingat manfaat-manfaat yang diberikan oleh utility-first framework, sehingga kamu dapat mempertimbangkannya. Dalam buku ini, kita akan mempelajari framework Tailwind CSS. Mulai dari konsep, workflow, hingga membuat sebuah website responsive dengan TailwindCSS. Buku ini tidak untuk semua orang, setidaknya kamu memahami cara mengoperasikan komputer, memahami HTML, memahami CSS, atau bisa dibilang kamu sudah pernah membangun website sebelumnya dan ingin mempelajari hal baru untuk meningkatkan skill."</p>
+        </div>
+    </div>
 
-
-
-
-
-
-
-
-  </div>
+</div>
 </body>
 </html>
