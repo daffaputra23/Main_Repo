@@ -34,11 +34,12 @@
   </script>
 </head>
 <body>
-    <main>
-        <div class="container px-11 font-inter flex w-full">
+    <main class="flex px-11 font-inter">
+        
             
             <!-- sidebar start --> 
-            <div class="sidebar font-medium w-[270px] border-r border-ea mr-[115px]">
+            <p class="xl:hidden lg:hidden md:block sm:block">Muncul</p>
+            <div class="sidebar font-medium w-[270px] border-r border-ea mr-[115px] duration-200 transition-transform  hidden xl:block md:hidden lg:block sm:hidden">
                 <div class="back flex items-center gap-2 mb-12 pt-9">
                     <img src="image/arrow.svg" alt="" srcset="">
                     <p class=" text-lg">App and Plugin</p>
@@ -101,15 +102,14 @@
             </div>
             <!-- sidebar end -->
 
-            <div class="searchResult pt-16 w-full pr-[114px] flex flex-col gap-6">
+            <div class="searchResult pt-16 w-full pr- flex flex-col gap-6">
                 <div class="text">
                     <p class="font-medium text-[32px] text-11b leading-10 mb-2">Our Recommendation for you</p>
                     <p class="text-5b font-normal text-lg">Favourite design app in 2023</p>
                 </div>
-                <div class="w-full h-[1px] bg-ea"></div>
-                <div class="cardContainer grid grid-cols-2 grid-rows-2 gap-6">
-                    
+                <div class="w-full h-[1px] bg-slate-100"></div>
 
+                <div class="cardContainer grid  grid-rows-2 gap-6 xl:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 grid-cols-1">
                     <div class="card p-5 border border-ea rounded-lg flex flex-col gap-4 hover:shadow-xl shadow-slate-200">
                         <div class="cardHead flex items-center justify-between">
                             <div class="logoText flex items-center gap-2">
@@ -222,7 +222,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        
     </main>
 </body>
 </html>
