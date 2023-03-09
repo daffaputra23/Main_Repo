@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,800;0,900;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'ea' : '#EAEAEA',
+            'b1': '#E0E3E8',
+            'b2': '#CBD1D8',
+            'b3': '#B1B9C5',
+            'b4': '#98A2B2',
+            'b5': '#7E8B9E',
+            'b6': '#64748B',
+            'b7': '#536174',
+            'b8': '#434D5D',
+            'b9': '#323A46',
+            'b10': '#21272E',
+            'b11': '#14171C',
+          },
+          fontFamily : {
+            inter : ['Inter']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+    <main>
+        <div class="container px-11 font-inter">
+            <div class="sidebar font-medium w-[270px] border-r border-ea">
+                <div class="back flex items-center gap-2 mb-12 pt-9">
+                    <img src="image/arrow.svg" alt="" srcset="">
+                    <p class=" text-lg">App and Plugin</p>
+                </div>
+                <div class="box-1 pb-9 pr-5">
+                    <div class="searchBox flex flex-col gap-2 mb-12">
+                        <p class=" text-lg ">Search</p>
+                        <input type="text" class="input p-3 text-sm font-medium placeholder-b2 rounded-lg border-b2 border" style="background-color:#FAFAFC;" placeholder="Search Something Here">
+                    </div>
+                    <div class="box-1-child border-b border-ea pb-9">
+                        <div class="filter text-b4 flex items-center gap-2 mb-6">
+                            <img src="image/filter.svg" alt="" srcset="">
+                            <p class="text-base">Choose Type</p>
+                        </div>
+                        <div class="item text-base text-b9">
+                            <ul class="space-y-2">
+                                <li>
+                                    <a href="">All</a>
+                                </li>
+                                <li>
+                                    <a href="">App</a>
+                                </li>
+                                <li>
+                                    <a href="">Plugin</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-2">
+                    <div class="box-2-child">
+                        <div class="filter text-b4 flex items-center gap-2 mb-6">
+                            <img src="image/category.svg" alt="" srcset="">
+                            <p class="text-base">Choose Type</p>
+                        </div>
+                        <div class="item text-base">
+                            <ul class="space-y-2 text-b9">
+                                <li>
+                                    <a href="">Recommended</a>
+                                </li>
+                                <li>
+                                    <a href="">Most Download</a>
+                                </li>
+                                <li>
+                                    <a href="">New Released</a>
+                                </li>
+                                <li>
+                                    <a href="">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="">Design</a>
+                                </li>
+                                <li>
+                                    <a href="">Web Development</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="searchResult">
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>
