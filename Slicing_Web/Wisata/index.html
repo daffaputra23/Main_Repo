@@ -27,30 +27,84 @@
 <body>
   <main class="font-jkt">
     <div class="container">
-        <nav class="flex items-center gap-10 py-3 px-[123px] pb-5 border-b border-border">
-            <div class="logo flex items-center gap-2 min-w-fit">
-                <img src="image/logo.svg" alt="" srcset="">
-                <p class="text-lg font-bold">Destinize</p>
-            </div>
-            <div class="searchBox w-full">
-                <input type="text" class="pl-11 py-4 w-full bg-no-repeat bg-neutralSecond bg-[center_left_22px] rounded-full placeholder:font-jkt placeholder:font-normal placeholder:text-xs placeholder:tracking-wider" placeholder="Cari apapun disini" style="background-image: url(image/search.svg);">
-            </div>
-            <div class="bahasa flex gap-[6px] items-center min-w-fit">
-                <img src="image/bahasa.svg" alt="" srcset="">
-                <span>Bahasa Indonesia</span>
-                <img src="image/arrow-down.png" alt="" srcset="">
-            </div>
-            <div class="lokasi flex items-center gap-2 min-w-fit">
-                <img src="image/location.svg" alt="" srcset="">
-                <div class="">
-                    <p class="text-text text-xs font-normal mb-[2px]">Lokasi</p>
-                    <div class="flex items-center gap-1">
-                        <select name="" id="" class= "flex items-center gap-1 appearance-none text-bluePrimary font-bold text-base focus:outline-none">
-                            <option value="">Indonesia, Yogyakarta</option>
-                            <option value="">Indonesia, Bandung</option>
-                        </select>
-                        <img src="image/arrowBold.svg" alt="" srcset="">
+        <nav class="flex flex-col gap-1">
+            <div class="flex items-center gap-10 py-3 px-[123px] pb-5">
+                <div class="logo flex items-center gap-2 min-w-fit">
+                    <img src="image/logo.svg" alt="" srcset="">
+                    <p class="text-lg font-bold">Destinize</p>
+                </div>
+                <div class="searchBox w-full">
+                    <input type="text" class="pl-11 py-4 w-full bg-no-repeat bg-neutralSecond bg-[center_left_22px] rounded-full placeholder:font-jkt placeholder:font-normal placeholder:text-xs placeholder:tracking-wider" placeholder="Cari apapun disini" style="background-image: url(image/search.svg);">
+                </div>
+                <div class="bahasa flex gap-[6px] items-center min-w-fit">
+                    <img src="image/bahasa.svg" alt="" srcset="">
+                    <span>Bahasa Indonesia</span>
+                    <img src="image/arrow-down.png" alt="" srcset="">
+                </div>
+                <div class="lokasi flex items-center gap-2 min-w-fit">
+                    <img src="image/location.svg" alt="" srcset="">
+                    <div class="">
+                        <p class="text-text text-xs font-normal mb-[2px]">Lokasi</p>
+                        <div class="flex items-center gap-1">
+                            <select name="" id="" class= "flex items-center gap-1 appearance-none text-bluePrimary font-bold text-base focus:outline-none">
+                                <option value="">Indonesia, Yogyakarta</option>
+                                <option value="">Indonesia, Bandung</option>
+                            </select>
+                            <img src="image/arrowBold.svg" alt="" srcset="">
+                        </div>
                     </div>
+                </div>
+            </div>
+            <div class="w-full h-[1px] bg-border"></div>
+            <div class="container py-3 flex items-center px-[122px] justify-between">
+                <div class="item flex items-center gap-10">
+                    <div class="dropwdown flex items-center gap-2 text-text font-normal text-sm">
+                        <select name="" id="" class="appearance-none">
+                            <option value="">Gunung</option>
+                        </select>
+                        <img src="image/arrowLight.svg" alt="" srcset="">
+                    </div>
+                    <div class="dropwdown flex items-center gap-2 text-text font-normal text-sm">
+                        <select name="" id="" class="appearance-none">
+                            <option value="">Pantai</option>
+                        </select>
+                        <img src="image/arrowLight.svg" alt="" srcset="">
+                    </div><div class="dropwdown flex items-center gap-2 text-text font-normal text-sm">
+                        <select name="" id="" class="appearance-none">
+                            <option value="">Kuliner</option>
+                        </select>
+                        <img src="image/arrowLight.svg" alt="" srcset="">
+                    </div><div class="dropwdown flex items-center gap-2 text-text font-normal text-sm">
+                        <select name="" id="" class="appearance-none">
+                            <option value="">Outbond</option>
+                        </select>
+                        <img src="image/arrowLight.svg" alt="" srcset="">
+                    </div><div class="dropwdown flex items-center gap-2 text-text font-normal text-sm">
+                        <select name="" id="" class="appearance-none">
+                            <option value="">Sejarah</option>
+                        </select>
+                        <img src="image/arrowLight.svg" alt="" srcset="">
+                    </div><div class="dropwdown flex items-center gap-2 text-text font-normal text-sm">
+                        <select name="" id="" class="appearance-none">
+                            <option value="">Edukasi</option>
+                        </select>
+                        <img src="image/arrowLight.svg" alt="" srcset="">
+                    </div><div class="dropwdown flex items-center gap-2 text-text font-normal text-sm">
+                        <select name="" id="" class="appearance-none">
+                            <option value="">Romantis</option>
+                        </select>
+                        <img src="image/arrowLight.svg" alt="" srcset="">
+                    </div><div class="dropwdown flex items-center gap-2 text-text font-normal text-sm">
+                        <select name="" id="" class="appearance-none">
+                            <option value="">Alam</option>
+                        </select>
+                        <img src="image/arrowLight.svg" alt="" srcset="">
+                    </div>
+                </div>
+        
+                <div class="icon flex items-center gap-2">
+                    <img src="image/cart.svg" alt="" srcset="">
+                    <img src="image/user.svg" alt="" srcset="">
                 </div>
             </div>
         </nav>
