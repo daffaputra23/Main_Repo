@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css"> 
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            neutralSecond : '#F0F1F2',
+            bluePrimary : '#4475F2',
+            text : '#9A9EA6',
+            border : '#DFDFE0'
+          },
+          fontFamily : {
+            'jkt' : ['Plus Jakarta Display']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <main class="font-jkt">
+    <div class="container">
+        <nav class="flex items-center gap-10 py-3 px-[123px] pb-5 border-b border-border">
+            <div class="logo flex items-center gap-2 min-w-fit">
+                <img src="image/logo.svg" alt="" srcset="">
+                <p class="text-lg font-bold">Destinize</p>
+            </div>
+            <div class="searchBox w-full">
+                <input type="text" class="pl-11 py-4 w-full bg-no-repeat bg-neutralSecond bg-[center_left_22px] rounded-full placeholder:font-jkt placeholder:font-normal placeholder:text-xs placeholder:tracking-wider" placeholder="Cari apapun disini" style="background-image: url(image/search.svg);">
+            </div>
+            <div class="bahasa flex gap-[6px] items-center min-w-fit">
+                <img src="image/bahasa.svg" alt="" srcset="">
+                <span>Bahasa Indonesia</span>
+                <img src="image/arrow-down.png" alt="" srcset="">
+            </div>
+            <div class="lokasi flex items-center gap-2 min-w-fit">
+                <img src="image/location.svg" alt="" srcset="">
+                <div class="">
+                    <p class="text-text text-xs font-normal mb-[2px]">Lokasi</p>
+                    <div class="flex items-center gap-1">
+                        <select name="" id="" class= "flex items-center gap-1 appearance-none text-bluePrimary font-bold text-base focus:outline-none">
+                            <option value="">Indonesia, Yogyakarta</option>
+                            <option value="">Indonesia, Bandung</option>
+                        </select>
+                        <img src="image/arrowBold.svg" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+  </main>
+</body>
+</html>
