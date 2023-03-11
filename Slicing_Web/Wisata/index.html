@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinize</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,800;0,900;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css"> 
+  <link rel="icon" href="image/logo.svg">
   <script>
     tailwind.config = {
       theme: {
@@ -13,11 +18,13 @@
             clifford: '#da373d',
             neutralSecond : '#F0F1F2',
             bluePrimary : '#4475F2',
+            blueLight : '#E5EDFF',
             text : '#9A9EA6',
             border : '#DFDFE0'
           },
           fontFamily : {
-            'jkt' : ['Plus Jakarta Display']
+            'jkt' : ['Plus Jakarta Display'],
+            'man' : ['Manrope']
           }
         }
       }
@@ -108,6 +115,142 @@
                 </div>
             </div>
         </nav>
+        <div class="container px-20">  
+            <div class="hero grid grid-cols-2 items-center">
+                <div class="heroText pb-24">
+                    <span class="text-base mb-3 inline-block rounded-full px-6 py-2 bg-blueLight font-semibold text-bluePrimary">🛫 • Explore the wonderful indonesia!</span>
+                    <h1 class="text-[76px] font-bold mb-9 -tracking-wide leading-[89px] max-w-fit">Liburan & nikmati <br>
+                       <span class="text-bluePrimary">tempat baru</span> di
+                        indonesia 🌊</h1>
+                    <div class="butonSection flex gap-10">
+                        <button class="bg-bluePrimary text-white font-medium rounded-lg text-base py-5 px-4" style="box-shadow: 0px 20px 35px 0px #4475F236;">Mulai sekarang →</button>
+                        <div class="flex items-center gap-2">
+                            <img src="image/play.svg" class="">
+                            <p class="font-medium text-text textlg">Putar Demo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="image/hero.svg" alt="" srcset="" class="min-w-fit">
+                </div>
+            </div>
+            <div class="imageLogo flex items-center justify-evenly">
+                <div>
+                    <img src="image/image 27.svg" alt="" srcset="">
+                </div>
+                <div>
+                    <img src="image/image 28.svg" alt="" srcset="">
+                </div>
+                <div>
+                    <img src="image/image 29.svg" alt="" srcset="">
+                </div>
+                <div>
+                    <img src="image/image 30.svg" alt="" srcset="">
+                </div>
+                <div>
+                    <img src="image/image 31.svg" alt="" srcset="">
+                </div>
+            </div>
+            <div class="destinasi h-[1000px]">
+                <p class="text-bluePrimary font-medium mb-3">DESTINASI FAVORIT</p>
+                <div class="flex justify-between mb-12">
+                    <p class="text-5xl font-semibold">🛫 • Temukan Destinasi Favoritmu</p>
+                    <div class="liatSemua flex items-center gap-1">
+                        <p class="font-medium text-base text-bluePrimary">Lihat Semua</p>
+                        <img src="image/arrowBlue.svg" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="gambarDestinasi grid grid-cols-4 gap-10 mb-36">
+                    <!-- kita gabisa ngecrop ini, tapi kita bisa ngehidden overflow yang terjadi -->
+                    <div class=" h-[392px] w-full rounded-lg  aspect-square group relative overflow-hidden">
+                        <div class="absolute transition-all duration-150 bg-cover bg-center group-hover:scale-150 w-full h-full bg-no-repeat" style="background-image: url('image/raja.jpg');"></div>
+                        <span class="absolute bottom-0 backdrop-blur-sm bg-white/40 p-3 text-gray-900 rounded-tr-lg text-lg font-bold">Raja Ampat<br><span class="text-sm font-medium text-slate-500">Bali</span></span>
+                    </div>
+                    <div class=" h-[392px] w-full rounded-lg  aspect-square group relative overflow-hidden">
+                        <div class="absolute transition-all duration-150 bg-cover bg-center group-hover:scale-150 w-full h-full bg-no-repeat" style="background-image: url('image/labuan.jpg');"></div>
+                        <span class="absolute bottom-0 backdrop-blur-sm bg-white/40 p-3 text-gray-900 rounded-tr-lg text-lg font-bold">Labuan Bajo<br><span class="text-sm font-medium text-slate-500">NTT</span></span>
+
+                    </div>
+                    <div class=" h-[392px] w-full rounded-lg  aspect-square group relative overflow-hidden">
+                        <div class="absolute transition-all duration-150 bg-cover bg-center group-hover:scale-150 w-full h-full bg-no-repeat" style="background-image: url('image/kawahijen.jpg');"></div>
+                        <span class="absolute bottom-0 backdrop-blur-sm bg-white/40 p-3 text-gray-900 rounded-tr-lg text-lg font-bold">Kawah Ijen<br><span class="text-sm font-medium text-slate-500">Jawa Timur</span></span>
+
+                    </div>
+                    <div class=" h-[392px] w-full rounded-lg  aspect-square group relative overflow-hidden">
+                        <div class="absolute transition-all duration-150 bg-cover bg-center group-hover:scale-150 w-full h-full bg-no-repeat" style="background-image: url('image/bromo.jpg');"></div>
+                        <span class="absolute bottom-0 backdrop-blur-sm bg-white/40 p-3 text-gray-900 rounded-tr-lg text-lg font-bold">Bromo<br><span class="text-sm font-medium text-slate-500">Jawa Timur</span></span>
+
+                    </div>
+                </div>
+                <div class="newSection mb-[170px] gap-48 grid grid-cols-2 justify-between">
+                    <div class="textSection">
+                        <p class="text-bluePrimary font-medium mb-2">RESERVASI TEMPAT</p>
+                        <p class="text-5xl font-semibold mb-8 leading-[63px]">Gak mau ngantri? reservasi aja! 🤙🏻</p>
+                        <div class="list flex flex-col gap-12">
+                            <div class="listItem flex items-center gap-5">
+                                <img src="image/lens.svg" alt="" srcset="">
+                                <div class="listText">
+                                    <p class="font-semibold text-lg mb-1 tracking-normal" style="color: #5E6282;">Cari tempat yang kamu mau</p>
+                                    <p class="font-normal  text-base leading-5" style="color: #5E6282;">Temukan destinasi selanjutnya yang akan kamu kunjungi dengan Destinize</p>
+                                </div>
+                            </div>
+                            <div class="listItem flex items-center gap-5">
+                                <img src="image/Pencil.svg" alt="" srcset="">
+                                <div class="listText">
+                                    <p class="font-semibold text-lg mb-1 tracking-normal" style="color: #5E6282;">Isi data dan konfirmasi pembayaran</p>
+                                    <p class="font-normal  text-base leading-5" style="color: #5E6282;">Tulis dan lengkapi data kamu untuk keperluan data booking</p>
+                                </div>
+                            </div>
+                            <div class="listItem flex items-center gap-5">
+                                <img src="image/emoji.svg" alt="" srcset="">
+                                <div class="listText">
+                                    <p class="font-semibold text-lg mb-1 tracking-normal" style="color: #5E6282;">Tinggal masuk dan enjoy!</p>
+                                    <p class="font-normal  text-base leading-5" style="color: #5E6282;">Kamu bisa langsung masuk dan enjoy liburan kamu tanpa hambatan</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="image relative">
+                        <img class="absolute rounded right-11" src="image/maxCard.svg" style="box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);" alt="" srcset="">
+                        <img class="absolute rounded right-[0px] top-64" src="image/minCard.svg" alt="" srcset="" style="box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481)">
+                    </div>
+                </div>
+                <div class="map">
+                    <div class="textMap mb-11">
+                        <p class="text-bluePrimary font-medium mb-4 text-center">CARI TEMPAT WISATA</p>
+                        <p class="text-5xl font-semibold mb-5 leading-[63px] text-center">🗺 • Cari Tempat Wisata Didekatmu</p>
+                        <p class="font-normal text-center text-lg leading-8 px-[212px]" style="color: #5E6282;">Fitur ini memungkinkan kamu untuk mencari tempat wisata atau tempat yang sedang populer di daerah kamu dengan begitu kamu akan selalu update dan gak kudet lagi 👍🏻</p>
+                    </div>
+                    
+                        <img src="image/map.svg" alt="" srcset="" class="mx-auto w-full mb-14">
+            
+                    <div class="list grid grid-cols-3 gap-12 mb-14">
+                        <div class="listItem flex items-start gap-4">
+                            <img src="image/locationBlack.svg" alt="" srcset="">
+                            <div class="font-man">
+                                <p class=" font-extrabold text-xl mb-2" style="color: #18214D;">Populer di dekatmu</p>
+                                <p class="text-lg font-medium leading-7">Tempat pariwisata yang populer dan pasti dikenal semua orang didekatmu</p>
+                            </div>
+                        </div>
+                        <div class="listItem flex items-start gap-4">
+                            <img src="image/love.svg" alt="" srcset="">
+                            <div class="font-man">
+                                <p class=" font-extrabold text-xl mb-2" style="color: #18214D;">Favorit di dekatmu</p>
+                                <p class="text-lg font-medium leading-7">Tempat favorit dan disukai semua orang orang di sekitar daerah kamu</p>
+                            </div>
+                        </div>
+                        <div class="listItem flex items-start gap-4">
+                            <img src="image/people.svg" alt="" srcset="">
+                            <div class="font-man">
+                                <p class=" font-extrabold text-xl mb-2" style="color: #18214D;">Ramai di didekatmu</p>
+                                <p class="text-lg font-medium leading-7">Spot yang paling ramai dikunjungi para warga sekaligus para wisatawan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
   </main>
 </body>
